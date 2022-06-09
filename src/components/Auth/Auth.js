@@ -27,7 +27,7 @@ const SignUp = () => {
   useEffect(() => {
     function start() {
     gapi.client.init({
-    clientId:"668874900475-hc356s0b6jb18t6qual069vfsf806c29.apps.googleusercontent.com",
+    clientId:process.env.REACT_APP_CLIENT_ID,
     scope: 'email',
       });
        }
@@ -90,7 +90,7 @@ const SignUp = () => {
             { isSignup ? 'Sign Up' : 'Sign In' }
           </Button>
           <GoogleLogin
-            clientId="668874900475-hc356s0b6jb18t6qual069vfsf806c29.apps.googleusercontent.com"
+            clientId={process.env.REACT_APP_CLIENT_ID}
             render={(renderProps) => (
               <Button className={classes.googleButton} color="primary" fullWidth onClick={renderProps.onClick} disabled={renderProps.disabled} startIcon={<Icon />} variant="contained">
                 Google Sign In
@@ -100,7 +100,7 @@ const SignUp = () => {
             onFailure={googleError}
             cookiePolicy="single_host_origin"
           />
-          <Grid container justify="flex-end">
+          <Grid container justifyContent="flex-end">
             <Grid item>
               <Button onClick={switchMode}>
                 { isSignup ? 'Already have an account? Sign in' : "Don't have an account? Sign Up" }
