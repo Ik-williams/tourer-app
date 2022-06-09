@@ -16,6 +16,9 @@ export default makeStyles((theme) => ({
     justifyContent: 'center',
   },
   fileInput: {
+    whiteSpace: 'nowrap',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
     width: '97%',
     margin: '10px 0',
   },

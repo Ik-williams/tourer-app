@@ -41,7 +41,7 @@ const App = () => {
             <Route path={['/creators/:name', '/tags/:name']} component={CreatorOrTag} />
             <Route path="/auth" exact component={() => (!user ? <Auth /> : <Redirect to="/posts" />)} />
           </Switch>
-        </Container>
+        </Container> 
       </BrowserRouter>
     </ThemeProvider>
     
