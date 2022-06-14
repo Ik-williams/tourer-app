@@ -1,4 +1,4 @@
-deployed app: https://tourer-app.vercel.app/
+deployed app: https://tourer-app.vercel.app
 <br />
 <div align="center">
   <img alt="Demo" src="https://raw.githubusercontent.com/Ik-williams/portfolio/main/src/Assets/Projects/tourer-app/Tourer-Home.png" />
